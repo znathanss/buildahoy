@@ -7,7 +7,7 @@ build_image:
   tags:
     - docker_build
   script:
-    - docker build -t git5.zswap.net:5050/docker/build-ahoy .
+    - docker build -t git5.zswap.net:5050/nathan/build-ahoy .
 
 
 push_image:
@@ -15,5 +15,5 @@ push_image:
   tags:
     - docker_build
   script:
-    - docker push git5.zswap.net:5050/docker/build-ahoy
+    - docker push git5.zswap.net:5050/nathan/build-ahoy
 
