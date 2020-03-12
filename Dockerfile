@@ -14,5 +14,7 @@ RUN wget https://releases.hashicorp.com/packer/1.5.1/packer_1.5.1_linux_amd64.zi
 
 COPY terraform /usr/bin/terraform
 
+RUN chmod +x /usr/bin/terraform
+
 ENTRYPOINT ["/bin/bash", "-l", "-c"]
 
